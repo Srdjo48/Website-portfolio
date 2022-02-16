@@ -1,0 +1,453 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.5);;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: century;
+    font-size:17.5px;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content:center;
+    align-items: center;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(..//images/slika1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:900px;
+    width:100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    margin: 120px auto;
+}
+
+.headings {
+    font-family: century;
+    font-size: 48px;
+    text-align: center;
+    margin: 0px 0px;
+}
+
+.klasa {
+    font-family:century;
+    font-size: 25px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.btn {
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+    margin:10px;
+    font-family: century;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+.klasa1 {
+    font-family:century;
+    font-size: 13px;
+    text-align: center;
+    margin: 0px auto;
+
+}
+
+/* About Section */
+
+#about {
+    max-width:900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom:50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+
+#slika {
+    display: flex;
+}
+
+#slika img {
+    width:350px;
+    height:350px;
+    border-radius: 50%;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 35px;
+    font-family: century;
+
+}
+
+#intro h2 {
+    font-size:32px;
+    margin-bottom: 20px;
+    font-family: century;
+}
+
+/* Portfolio Section */
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding:20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.gallery img {
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+/* Services Section */
+
+#services {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.box-one {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(189, 192, 15) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+    cursor: pointer;
+    font-family: century;
+}
+
+.box-one:hover {
+    background-position: left bottom;
+    color: white;
+    box-shadow: 0 0 20px rgb(189, 192, 15);
+    border: 1px solid rgb(189, 192, 15);
+}
+
+.box-one img {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding: 10px;
+}
+
+.box-two {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(255, 45, 45) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+    cursor: pointer;
+    font-family: century;
+}
+
+.box-two:hover {
+    background-position: left bottom;
+    color: white;
+    box-shadow: 0 0 20px rgb(255, 45, 45);
+    border: 1px solid rgb(255, 45, 45);
+}
+
+.box-two img {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding: 10px;
+}
+
+.box-three {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(36, 38, 136) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+    cursor: pointer;
+    font-family: century;
+}
+
+.box-three:hover {
+    background-position: left bottom;
+    color: white;
+    box-shadow: 0 0 20px rgb(36, 38, 136);
+    border: 1px solid rgb(36, 38, 136);
+}
+
+.box-three img {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding: 10px;
+}
+
+/* Contact Section */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 25px;
+    font-family: century;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 10px 0px;
+    font-family: century;
+}
+
+.input {
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: century;
+}
+
+#msg {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-radius:5px;
+    font-family: century;
+}
+
+#send {
+    padding: 10px;
+    width: 10%;
+    margin: 10px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-family: century;
+}
+
+#send:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    background-color:darkgray;
+    font-family: century;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height:110px;
+    margin: 0px auto;
+}
+.tekst {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slike {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:35px;
+    height:35px;
+    gap:20%;
+    border-radius:10px;
+    text-align: center;
+
+}
+
+.slike:hover {
+    cursor: pointer;
+
+}
+.slika1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.slika2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+}
+.slika3 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+}
+
+
+@media screen and (max-width: 900px) {
+    /* Navbar */
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Headings */
+    .headings {
+        font-size:40px;
+    }
+
+    /* About */
+    #slika {
+        flex-direction: column;
+        align-items: center; 
+    }
+    }
+    #intro h2 {
+        padding: 10px;
+    }
+
+    @media screen and (max-width: 645px) {
+        /* Home */
+        #home {
+            height: 820px;
+        }
+        .headings {
+            font-size: 27px;
+        }
+    }
+        /* About */
+        #slika img {
+        width:300px;
+        height:300px;
+    }
+    #intro h2 {
+        font-size:24px;
+    }
+     
+    
+     
