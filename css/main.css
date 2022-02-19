@@ -436,6 +436,12 @@ html {
         #home {
             height: 820px;
         }
+        #home::before {
+            width:100%;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
         .headings {
             font-size: 27px;
         }
@@ -448,6 +454,10 @@ html {
     #intro h2 {
         font-size:24px;
     }
-     
+
+        /* Contact */
+     #send {
+         width:20%;
+     }
     
      
